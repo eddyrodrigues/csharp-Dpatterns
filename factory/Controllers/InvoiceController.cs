@@ -10,7 +10,7 @@ public class InvoiceController : ControllerBase
     [HttpGet]
     [Route("Invoice/{invoiceNumber}/Type/{invoiceCode}")]
     public Invoice getInvoice([FromRoute] string invoiceNumber, int invoiceCode){
-        return new InvoiceFactory().createInvoice(invoiceNumber, invoiceCode);
+        return new InvoiceFactory().createInvoice(invoiceNumber, invoiceCode); // done
     }
     
     [HttpGet]
